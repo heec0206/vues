@@ -1,1 +1,1 @@
-# vuez
+# vue-springboot-project
