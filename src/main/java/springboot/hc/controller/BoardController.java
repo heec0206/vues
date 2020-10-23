@@ -24,10 +24,8 @@ public class BoardController {
         Map<String, Object> map = new HashMap<String, Object>();
         //map.put("img", "list01.jpg");
         map.put("title", "EOD 고성");
-        map.put("date", 2020.06.11);
+        map.put("date", "2020.06.11");
         map.put("No", 1);
-
-
         return map;
     }
         /*

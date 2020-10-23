@@ -22,7 +22,17 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      posts: []
+      posts: [
+        //원 데이터
+        /*
+        {
+          No : "1",
+          title: "EOD 고성",
+          date: "2019.06.23",
+          //img : require('../asstes/images/list01.jpg'),
+        },
+        */
+      ]
     };
   },
   computed: {
@@ -39,7 +49,8 @@ export default {
         }
       })
       .then((result) => {
-        this.posts = result.data
+        console.log(result.data);
+        //this.posts = result.data
       }
   )},
 
