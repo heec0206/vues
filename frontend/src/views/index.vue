@@ -50,7 +50,7 @@ export default {
       })
       .then((result) => {
         console.log(result.data);
-        //this.posts = result.data
+        this.posts = result.data
       }
   )},
 
