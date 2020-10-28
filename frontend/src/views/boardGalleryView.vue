@@ -1,21 +1,29 @@
 <template>
-  <article class="mainContents">
-    <div class="mainContentsIn">
-      index
+  <section class="contensWrap">
+    <div class="contensBox">
+
+      <article class="">
+          상세
+      </article>
+
     </div>
-  </article>
+  </section>
 </template>
 <script>
+import axios from 'axios';
 
 export default {
   data() {
     return {
+      postsView:[
 
-    }
+      ]
+    };
   },
   computed: {
 
   },
+
   created: function(){
 
   },
@@ -27,10 +35,5 @@ export default {
 </script>
 
 <style scoped lang="scss">
-  .contensWrap {
-    max-width:0;
-    .mainContents {
-      border:1px solid red;
-    }
-  }
+
 </style>

@@ -1,7 +1,8 @@
 <template>
-  <article class="mainContents">
-    <div class="mainContentsIn">
-      index
+  <article class="errorPage">
+    <div class="errorPageBox">
+      404 error pages<br/>
+      페이지를 찾을 수 없습니다.
     </div>
   </article>
 </template>

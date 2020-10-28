@@ -5,8 +5,8 @@ $point-color-black : #222;
 $point-color-blue : skyblue;
 $txt_bold : 600;
 $txt_strong : 500;
-
-.topLayout {
+/*
+.topLayout_back {
   overflow:hidden;
   padding:18px;
   border-bottom:1px solid #ddd;
@@ -42,11 +42,74 @@ $txt_strong : 500;
     }
   }
 }
+*/
+.topLayout {
+  position:relative;
+  border-bottom:1px solid #888;
+  height:91px;
+  .topLayoutIn {
+    max-width:1200px;
+    padding:0 16px;
+    margin:0 auto;
+    .logo {
+      position:absolute;
+      top:15px;
+      margin:0;
+      img {
+        height:60px;
+      }
+    }
+    nav {
+      margin:0 50px 0 120px;
+      &>ul {
+        overflow:hidden;
+        height:91px;
+        &>li {
+          float:left;
+          width:20%;
+          & > a {
+            display:block;
+            text-align:center;
+            padding:0 15px;
+            height:91px;
+            line-height:91px;
+            font-size:18px;
+            font-weight:500;
+          }
+          &>ul {
+            display:none;
+            overflow:hidden;
+            &>li {
+              float:left;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+.mainContents {
+    height:1000px;
+    text-align:center;
+    line-height:1000px;
+    font-size:20px;
+}
+.errorPage {
+  min-height:1000px;
+  text-align:center;
+  font-size:30px;
+  font-weight:500;
+  .errorPageBox {
+    padding:450px 0 0 0;
+  }
+}
 
 .contensWrap {
   max-width:1248px;
   margin:0 auto;
   padding:30px 0;
+  min-height:1000px;
   .contentsBox {
     padding:0 24px;
   }
@@ -107,7 +170,9 @@ $txt_strong : 500;
           .cropBox {
             display:block;
             height:100%;
-            background-size:100% auto;
+            background-size:cover;
+            background-position:50% 50%;
+            background-repeat:no-repeat;
             transition: 0.299s ease;
           }
         }
@@ -407,9 +472,6 @@ $txt_strong : 500;
     }
   }
 
-  .topLayout {
-    padding:15px 16px;
-  }
   .profile {
     .profileR {
       ul {
@@ -476,12 +538,6 @@ $txt_strong : 500;
   }
   .btn_center {
     margin:30px 0 0 0;
-  }
-  .topLayout {
-    padding:15px 16px;
-    nav ul li {
-      margin:0 0 0 10px;
-    }
   }
   .link_detail {
     padding:8px 14px;

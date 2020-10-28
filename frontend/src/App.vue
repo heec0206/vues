@@ -1,15 +1,8 @@
 <template>
   <div id="app">
-    
     <header-layout></header-layout>
-
-    <section class="contensWrap">
-      <div class="contentsBox">
-        <router-view/>
-      </div>
-    </section>
+    <router-view/>
     <footer-layout></footer-layout>
-
   </div>
 </template>
 
